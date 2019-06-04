@@ -1,13 +1,13 @@
 package br.com.trevezani.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class VersaoController {
 
-    @RequestMapping("versao")
-    public String versao() {
+    @RequestMapping("/versao")
+    public String index() {
         return "v1.00";
     }	
 	
