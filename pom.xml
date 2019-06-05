@@ -45,7 +45,7 @@
 				<version>0.4.13</version>
 				<configuration>
 					<imageName>test-sb</imageName>
-					<baseImage>openjdk:8-jre-alpine</baseImage>
+					<baseImage>openjdk:8u212-jre-alpine</baseImage>
 					<entryPoint>["sh", "-c", "java -Djava.security.egd=file:/dev/./urandom -jar /${project.build.finalName}.jar"]</entryPoint>
 					<resources>
 						<resource>
